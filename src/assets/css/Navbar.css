@@ -1,0 +1,10 @@
+.logo {
+        height: 8vh;
+}
+.nav {
+        background-color: rgb(0,56,150);
+        color: white;
+}
+.nav-links {
+        margin-left: 55vw;
+}
