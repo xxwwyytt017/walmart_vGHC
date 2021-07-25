@@ -3,7 +3,6 @@ import cart from "../assets/image/cart.svg";
 import { Image, Dropdown, Button } from 'react-bootstrap';
 
 function CartBtn(props) {
-
         
 
         return (

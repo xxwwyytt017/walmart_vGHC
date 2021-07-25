@@ -11,7 +11,10 @@ function App() {
   const [cartItems, changeItems] = useState([])
   const [showDelivered, setShowDelivered] = useState(false);
 
-  const handleClose = () => setShowDelivered(false);
+  const handleClose = () => {
+    setShowDelivered(false);
+    changeItems(cartItems => []);
+  };
 
   return (
     <div className="App">
