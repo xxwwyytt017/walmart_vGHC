@@ -19,6 +19,7 @@ function NavbarSection(props) {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="nav-links">
+                <CartBtn items={props.items} handleCart={props.handleCart} setShow={props.setShow} />
                 <Nav.Link onClick={handleShow}>My Innovation</Nav.Link>
                 <Modal show={show}>
                         <Modal.Header>
@@ -38,7 +39,6 @@ function NavbarSection(props) {
                         </Button>
                         </Modal.Footer>
                 </Modal>
-                <CartBtn items={props.items} handleCart={props.handleCart} setShow={props.setShow} />
                 </Nav>
                 </Navbar.Collapse>
                 </Container>

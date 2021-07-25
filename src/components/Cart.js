@@ -16,7 +16,7 @@ function CartBtn(props) {
                 {
                         props.items.length === 0 ?
                         <Dropdown.Item>No selected items</Dropdown.Item> :
-                        props.items.map((product) => <Dropdown.Item>{product}</Dropdown.Item>)
+                        props.items.map((product) => <Dropdown.Item>{product.split(" ")[0]}</Dropdown.Item>)
                 }
                 <Dropdown.Item>
                         <Button variant="danger" size="sm" onClick={() => props.handleCart(cart => [])}>
